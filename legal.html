@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legal — TACET</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* Legal ページ専用の最小限のスタイル。css/pages/legal.css を新設するほどの
+     分量ではないため、テキスト中心ページとしてこのファイル内に留める。 */
+  .legal-header { padding: 200px 0 64px; }
+  .legal-header h1 { font-size: clamp(28px, 4vw, 44px); margin-top: 8px; }
+
+  .demo-notice {
+    border: 1px solid var(--color-border);
+    background: var(--color-bg-alt);
+    padding: 20px 24px;
+    margin-top: 32px;
+    font-size: 14px;
+    color: var(--color-ink-soft);
+    letter-spacing: 0.02em;
+  }
+
+  .legal-tabs {
+    display: flex;
+    gap: 32px;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .legal-tabs a {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-ink-soft);
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+    transition: color .3s var(--ease), border-color .3s var(--ease);
+  }
+
+  .legal-tabs a:hover { color: var(--color-ink); border-color: var(--color-ink); }
+
+  .legal-section { padding: 96px 0; border-top: 1px solid var(--color-border); }
+
+  .legal-section h2 { font-size: clamp(24px, 3.4vw, 34px); scroll-margin-top: calc(var(--header-h) + 24px); }
+
+  .legal-section > .container > p.eyebrow { margin-bottom: 8px; }
+
+  .legal-lede {
+    max-width: 640px;
+    margin: 20px 0 48px;
+    color: var(--color-ink-soft);
+    font-size: 15px;
+  }
+
+  .tokushoho-table {
+    width: 100%;
+    max-width: 880px;
+    border-collapse: collapse;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .tokushoho-table th,
+  .tokushoho-table td {
+    text-align: left;
+    padding: 20px 16px;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+    vertical-align: top;
+  }
+
+  .tokushoho-table th {
+    width: 220px;
+    color: var(--color-ink-soft);
+    letter-spacing: 0.06em;
+  }
+
+  .privacy-block { max-width: 720px; }
+  .privacy-block h3 {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    margin-top: 40px;
+  }
+  .privacy-block h3:first-child { margin-top: 0; }
+  .privacy-block p {
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--color-ink-soft);
+  }
+
+  @media (max-width: 767px) {
+    .legal-header { padding: 140px 0 48px; }
+    .legal-tabs { gap: 20px; }
+    .legal-section { padding: 64px 0; }
+    .tokushoho-table th { width: 130px; }
+    .tokushoho-table th, .tokushoho-table td { padding: 14px 10px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">TACET</a>
+    <nav class="main-nav">
+      <a href="collection.html">Collection</a>
+      <a href="lookbook.html">Lookbook</a>
+      <a href="concept.html">Concept</a>
+      <a href="contact.html">Stores</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="cart-link">Cart<span class="cart-count" data-cart-count>(0)</span></a>
+      <button class="nav-toggle" aria-label="メニューを開く">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="legal-header">
+    <div class="container">
+      <p class="eyebrow">Legal</p>
+      <h1>特定商取引法に基づく表記 / プライバシーポリシー</h1>
+      <p class="demo-notice">
+        本サイト「TACET」は架空のブランドによるデモンストレーションです。実在の事業者・商品・取引とは一切関係ありません。掲載されている会社名・住所・電話番号・価格等の情報はすべてダミーであり、本サイトから実際の注文・決済・お問い合わせを行うことはできません。
+      </p>
+      <nav class="legal-tabs" aria-label="ページ内リンク">
+        <a href="#tokushoho">特定商取引法に基づく表記</a>
+        <a href="#privacy">プライバシーポリシー</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="legal-section" id="tokushoho">
+    <div class="container">
+      <p class="eyebrow">01</p>
+      <h2>特定商取引法に基づく表記</h2>
+      <p class="legal-lede">通信販売に関する特定商取引法第11条に基づく表記です。本ページの内容はすべてデモ用のダミー情報です。</p>
+
+      <table class="tokushoho-table">
+        <tbody>
+          <tr>
+            <th scope="row">販売業者</th>
+            <td>TACET合同会社（架空の事業者です）</td>
+          </tr>
+          <tr>
+            <th scope="row">運営統括責任者</th>
+            <td>山田 静香（デモ用の仮名です）</td>
+          </tr>
+          <tr>
+            <th scope="row">所在地</th>
+            <td>〒150-0001　東京都渋谷区神宮前0-0-0　TACETビル 3F（架空の住所です）</td>
+          </tr>
+          <tr>
+            <th scope="row">電話番号</th>
+            <td>03-0000-0000（受付時間：平日11:00〜18:00 / デモ用のダミー番号です）</td>
+          </tr>
+          <tr>
+            <th scope="row">メールアドレス</th>
+            <td>contact@tacet.example.com（デモ用のダミーアドレスです）</td>
+          </tr>
+          <tr>
+            <th scope="row">販売価格</th>
+            <td>各商品ページに表示する価格（税込）による。</td>
+          </tr>
+          <tr>
+            <th scope="row">商品代金以外の必要料金</th>
+            <td>送料：全国一律1,000円（¥30,000以上のご注文で無料）。代金引換手数料：330円。</td>
+          </tr>
+          <tr>
+            <th scope="row">お支払い方法</th>
+            <td>クレジットカード、代金引換、銀行振込（本サイトはモックのため実際の決済は発生しません）</td>
+          </tr>
+          <tr>
+            <th scope="row">お支払い時期</th>
+            <td>クレジットカード：ご注文確定時。銀行振込：ご注文から7日以内。</td>
+          </tr>
+          <tr>
+            <th scope="row">引渡時期</th>
+            <td>ご注文確定後、通常3〜7営業日以内に発送。</td>
+          </tr>
+          <tr>
+            <th scope="row">返品・交換</th>
+            <td>商品到着後8日以内、未使用・タグ付きの状態に限り返品を承ります。お客様都合による返送料はお客様負担とします。</td>
+          </tr>
+          <tr>
+            <th scope="row">キャンセル</th>
+            <td>発送準備前に限りキャンセルを承ります。発送後のキャンセルはお受けできません。</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="legal-section" id="privacy">
+    <div class="container">
+      <p class="eyebrow">02</p>
+      <h2>プライバシーポリシー</h2>
+      <p class="legal-lede">TACET（以下「当サイト」）は、お客様の個人情報を以下の方針に基づき取り扱います。本ページの内容はすべてデモ用の一般的な文面です。</p>
+
+      <div class="privacy-block">
+        <h3>1. 取得する情報</h3>
+        <p>当サイトは、お問い合わせやご注文（モック機能）の際に、氏名、メールアドレス、電話番号、配送先住所等の情報をご入力いただく場合があります。</p>
+
+        <h3>2. 利用目的</h3>
+        <p>取得した情報は、お問い合わせへの対応、注文内容の確認、商品の発送、サービス向上のための分析の目的にのみ利用します。目的の範囲を超えて利用することはありません。</p>
+
+        <h3>3. 第三者提供</h3>
+        <p>法令に基づく場合を除き、お客様の同意なく個人情報を第三者に提供することはありません。</p>
+
+        <h3>4. Cookie（クッキー）の利用</h3>
+        <p>当サイトはカート情報の保持等のため、ブラウザのlocalStorageを利用します。これによりお客様個人を特定することはありません。</p>
+
+        <h3>5. 個人情報の管理</h3>
+        <p>取得した個人情報は、漏えい・滅失・毀損の防止のため、適切な安全管理措置を講じます。</p>
+
+        <h3>6. お問い合わせ窓口</h3>
+        <p>個人情報の取り扱いに関するお問い合わせは、下記までご連絡ください（デモ用のダミー窓口です）。<br>TACET カスタマーサポート　contact@tacet.example.com</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="logo" style="color:var(--color-ink); font-size:20px;">TACET</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Brand</h4>
+        <ul>
+          <li><a href="concept.html">Concept</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Stores / Contact</a></li>
+          <li><a href="legal.html">特定商取引法に基づく表記</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 TACET</span>
+      <span>This is a fictional brand for demonstration purposes.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
