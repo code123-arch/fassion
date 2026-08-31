@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Detail — TACET</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages/product.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">TACET</a>
+    <nav class="main-nav">
+      <a href="collection.html">Collection</a>
+      <a href="lookbook.html">Lookbook</a>
+      <a href="concept.html">Concept</a>
+      <a href="contact.html">Stores</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="cart-link">Cart<span class="cart-count" data-cart-count>(0)</span></a>
+      <button class="nav-toggle" aria-label="メニューを開く">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="pdp-section">
+    <div class="container">
+
+      <div id="product-not-found" hidden>
+        <p class="eyebrow">Not Found</p>
+        <h1>商品が見つかりませんでした</h1>
+        <p>お探しの商品は削除されたか、URLが正しくない可能性があります。</p>
+        <a href="collection.html" class="btn">Collectionへ戻る</a>
+      </div>
+
+      <div id="product-detail" class="product-detail" hidden>
+        <div class="product-gallery" id="product-gallery"></div>
+
+        <div class="product-info">
+          <p class="cat" id="product-category"></p>
+          <h1 id="product-name"></h1>
+          <p class="price" id="product-price"></p>
+          <p class="description" id="product-description"></p>
+
+          <div class="option-group">
+            <p class="option-label">Color</p>
+            <div class="option-list" id="color-options" role="group" aria-label="カラーを選択"></div>
+          </div>
+
+          <div class="option-group">
+            <p class="option-label">Size</p>
+            <div class="option-list" id="size-options" role="group" aria-label="サイズを選択"></div>
+          </div>
+
+          <div class="option-group">
+            <p class="option-label">Qty</p>
+            <div class="qty-control">
+              <button type="button" id="qty-decrement" aria-label="数量を減らす">−</button>
+              <input type="number" id="qty-input" value="1" min="1" max="99" inputmode="numeric" aria-label="数量">
+              <button type="button" id="qty-increment" aria-label="数量を増やす">+</button>
+            </div>
+          </div>
+
+          <button type="button" id="add-to-cart" class="btn add-to-cart-btn" disabled>カートに入れる</button>
+          <p class="option-hint" id="selection-hint">カラーとサイズを選択してください</p>
+          <p class="cart-feedback" id="cart-feedback" role="status" aria-live="polite" hidden></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="logo" style="color:var(--color-ink); font-size:20px;">TACET</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Brand</h4>
+        <ul>
+          <li><a href="concept.html">Concept</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Stores / Contact</a></li>
+          <li><a href="legal.html">特定商取引法に基づく表記</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 TACET</span>
+      <span>This is a fictional brand for demonstration purposes.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages/product.js"></script>
+</body>
+</html>
