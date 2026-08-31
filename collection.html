@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collection — TACET</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages/collection.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">TACET</a>
+    <nav class="main-nav">
+      <a href="collection.html" aria-current="page">Collection</a>
+      <a href="lookbook.html">Lookbook</a>
+      <a href="concept.html">Concept</a>
+      <a href="contact.html">Stores</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="cart-link">Cart<span class="cart-count" data-cart-count>(0)</span></a>
+      <button class="nav-toggle" aria-label="メニューを開く">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Collection</p>
+      <h1>All Products</h1>
+      <p class="page-head-lead">削ぎ落とした先にある、確かな佇まい。カテゴリから、静けさを纏う一着を選ぶ。</p>
+    </div>
+  </section>
+
+  <section class="section-pad" style="padding-top: 0;">
+    <div class="container">
+      <div class="filter-bar" role="group" aria-label="カテゴリで絞り込む" data-filter-bar>
+        <button type="button" class="filter-btn is-active" data-filter="All">All</button>
+        <button type="button" class="filter-btn" data-filter="Outerwear">Outerwear</button>
+        <button type="button" class="filter-btn" data-filter="Tops">Tops</button>
+        <button type="button" class="filter-btn" data-filter="Bottoms">Bottoms</button>
+        <button type="button" class="filter-btn" data-filter="Accessories">Accessories</button>
+      </div>
+
+      <div class="product-row collection-grid" data-product-grid aria-live="polite"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="logo" style="color:var(--color-ink); font-size:20px;">TACET</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Brand</h4>
+        <ul>
+          <li><a href="concept.html">Concept</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Stores / Contact</a></li>
+          <li><a href="legal.html">特定商取引法に基づく表記</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 TACET</span>
+      <span>This is a fictional brand for demonstration purposes.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/pages/collection.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
