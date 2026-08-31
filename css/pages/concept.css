@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Concept page — brand story & commitments
+   （css/style.css に無い見せ方のみをここに追加する）
+   ========================================================================== */
+
+.story-copy {
+  max-width: 640px;
+}
+
+.story-copy h2 {
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.35;
+  margin-bottom: 40px;
+}
+
+.story-copy p {
+  font-size: 17px;
+  color: var(--color-ink-soft);
+  margin: 0 0 28px;
+}
+
+.story-copy p:last-child { margin-bottom: 0; }
+
+/* Three commitment points, staggered like .offset-grid to keep the
+   "considered, not centered" feel rather than a flat 3-up grid. */
+.commitment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.commitment-item .ph {
+  aspect-ratio: 3 / 4;
+  margin-bottom: 28px;
+}
+
+.commitment-item h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.commitment-item p {
+  font-size: 15px;
+  color: var(--color-ink-soft);
+}
+
+.commitment-item.is-offset {
+  margin-top: 64px;
+}
+
+@media (max-width: 1023px) {
+  .commitment-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .commitment-item.is-offset { margin-top: 0; }
+  .commitment-item:nth-child(3) { grid-column: 1 / -1; max-width: 360px; }
+}
+
+@media (max-width: 767px) {
+  .commitment-grid { grid-template-columns: 1fr; gap: 40px; }
+  .commitment-item:nth-child(3) { grid-column: auto; max-width: none; }
+}
