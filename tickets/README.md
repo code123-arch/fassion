@@ -61,12 +61,13 @@
 // products.js が公開するもの
 window.TACET_PRODUCTS // Array<Product>
 TacetProducts.getById(id) // -> Product | undefined
+TacetProducts.getByCategory(category) // 'All' | 'Outerwear' | 'Tops' | 'Bottoms' | 'Accessories' -> Array<Product>
 
 // cart.js が公開するもの
-TacetCart.getCart()                          // -> Array<CartItem>
-TacetCart.addItem({ id, color, size, qty })  // -> void
-TacetCart.removeItem(id, color, size)        // -> void
-TacetCart.updateQty(id, color, size, qty)    // -> void
-TacetCart.getSubtotal()                      // -> number
-TacetCart.clearCart()                        // -> void
+TacetCart.getCart()                                            // -> Array<CartItem>
+TacetCart.addItem({ id, name, price, color, size, qty, image }) // -> void
+TacetCart.removeItem(id, color, size)                          // -> void
+TacetCart.updateQty(id, color, size, qty)                      // -> void
+TacetCart.getSubtotal()                                        // -> number
+TacetCart.clearCart()                                          // -> void
 ```
