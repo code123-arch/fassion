@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="matBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D6D0C3"/>
+      <stop offset="50%" stop-color="#B4AC9E"/>
+      <stop offset="100%" stop-color="#736E62"/>
+    </linearGradient>
+    <pattern id="weave" width="24" height="24" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="24" stroke="#F5F3EF" stroke-width="2" opacity="0.10"/>
+      <line x1="12" y1="0" x2="12" y2="24" stroke="#1A1917" stroke-width="2" opacity="0.08"/>
+    </pattern>
+    <pattern id="weave2" width="24" height="24" patternTransform="rotate(-45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="24" stroke="#F5F3EF" stroke-width="1.5" opacity="0.08"/>
+    </pattern>
+    <radialGradient id="matVignette" cx="50%" cy="45%" r="70%">
+      <stop offset="60%" stop-color="#1A1917" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#1A1917" stop-opacity="0.35"/>
+    </radialGradient>
+    <filter id="grain2">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="1200" fill="url(#matBg)"/>
+  <rect width="900" height="1200" fill="url(#weave)"/>
+  <rect width="900" height="1200" fill="url(#weave2)"/>
+  <rect width="900" height="1200" fill="url(#matVignette)"/>
+  <rect width="900" height="1200" filter="url(#grain2)" opacity="0.06"/>
+</svg>

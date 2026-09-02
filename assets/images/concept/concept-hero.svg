@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2000" viewBox="0 0 1600 2000">
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#DED8CB"/>
+      <stop offset="45%" stop-color="#A39B8C"/>
+      <stop offset="100%" stop-color="#1A1917"/>
+    </linearGradient>
+    <linearGradient id="heroFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A1917" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#1A1917" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#1A1917" stop-opacity="0.75"/>
+    </linearGradient>
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="70"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="2000" fill="url(#heroBg)"/>
+
+  <!-- soft off-center silhouette, an abstract impression of a standing figure -->
+  <ellipse cx="1020" cy="1120" rx="220" ry="620" fill="#1A1917" opacity="0.28" filter="url(#softBlur)"/>
+  <ellipse cx="1060" cy="760" rx="140" ry="220" fill="#1A1917" opacity="0.22" filter="url(#softBlur)"/>
+
+  <!-- fine vertical drape lines -->
+  <g stroke="#F5F3EF" stroke-width="1.5" opacity="0.16">
+    <line x1="760" y1="200" x2="740" y2="1900"/>
+    <line x1="840" y1="260" x2="810" y2="1900"/>
+    <line x1="1220" y1="180" x2="1260" y2="1900"/>
+  </g>
+
+  <rect width="1600" height="2000" fill="url(#heroFade)"/>
+  <rect width="1600" height="2000" filter="url(#grain)" opacity="0.05"/>
+</svg>
