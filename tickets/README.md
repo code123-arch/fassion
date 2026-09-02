@@ -63,6 +63,11 @@ window.TACET_PRODUCTS // Array<Product>
 TacetProducts.getById(id) // -> Product | undefined
 TacetProducts.getByCategory(category) // 'All' | 'Outerwear' | 'Tops' | 'Bottoms' | 'Accessories' -> Array<Product>
 
+// Product.images は `.ph-1`〜`.ph-3` クラス名ではなく、
+// assets/images/ 配下のSVGファイルへの相対パス配列（例: ['assets/images/p01-1.svg', 'assets/images/p01-2.svg']）。
+// 各商品2枚（1枚目=メインカット、2枚目=ディテールカット）。
+// <img src="{path}" loading="lazy" alt="..."> として描画する想定（`.ph`クラスは付与しない）。
+
 // cart.js が公開するもの
 TacetCart.getCart()                                            // -> Array<CartItem>
 TacetCart.addItem({ id, name, price, color, size, qty, image }) // -> void
