@@ -17,6 +17,16 @@
     return `¥${Number(price).toLocaleString('ja-JP')}`;
   }
 
+  // Product.images entries are either a real asset path (assets/images/...)
+  // or, as a fallback, a `.ph-N` placeholder class name.
+  function renderMedia(value, alt) {
+    const v = value || 'ph-1';
+    if (v.indexOf('/') !== -1) {
+      return `<img class="ph" src="${escapeHtml(v)}" alt="${escapeHtml(alt || '')}" loading="lazy" style="display:block;width:100%;object-fit:cover;">`;
+    }
+    return `<div class="ph ${escapeHtml(v)}"></div>`;
+  }
+
   function getProductsByCategory(category) {
     if (window.TacetProducts && typeof window.TacetProducts.getByCategory === 'function') {
       return window.TacetProducts.getByCategory(category);
@@ -30,7 +40,7 @@
     const image = (product.images && product.images[0]) || 'ph-1';
     return `
       <a class="product-card" href="product.html?id=${encodeURIComponent(product.id)}">
-        <div class="ph ${escapeHtml(image)}"></div>
+        ${renderMedia(image, product.name)}
         <p class="cat">${escapeHtml(product.category)}</p>
         <h3>${escapeHtml(product.name)}</h3>
         <p class="price">${formatPrice(product.price)}</p>

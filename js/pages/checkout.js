@@ -3,6 +3,22 @@
 (function () {
   const formatPrice = (value) => `¥${value.toLocaleString('ja-JP')}`;
 
+  function escapeHtml(value) {
+    return String(value).replace(/[&<>"']/g, (c) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+    }[c]));
+  }
+
+  // item.image is either a real asset path (assets/images/...) or, as a
+  // fallback, a `.ph-N` placeholder class name.
+  function renderMedia(value, alt) {
+    const v = value || 'ph-1';
+    if (v.indexOf('/') !== -1) {
+      return `<img class="ph" src="${escapeHtml(v)}" alt="${escapeHtml(alt || '')}" loading="lazy" style="display:block;object-fit:cover;">`;
+    }
+    return `<div class="ph ${escapeHtml(v)}"></div>`;
+  }
+
   const emptyEl = document.querySelector('[data-checkout-empty]');
   const formSectionEl = document.querySelector('[data-checkout-form]');
   const completeEl = document.querySelector('[data-checkout-complete]');
@@ -26,10 +42,9 @@
 
     itemsEl.innerHTML = cart
       .map((item) => {
-        const imageClass = item.image || 'ph-1';
         return `
           <li class="order-item">
-            <div class="ph ${imageClass}"></div>
+            ${renderMedia(item.image, item.name)}
             <div class="order-item-meta">
               <h3>${item.name}</h3>
               <p>${item.color} / ${item.size} × ${item.qty}</p>

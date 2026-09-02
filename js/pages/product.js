@@ -35,10 +35,30 @@
   bindQty();
   bindAddToCart();
 
+  // Product.images entries are either a real asset path (assets/images/...)
+  // or, as a fallback, a `.ph-N` placeholder class name.
+  function renderMedia(value, alt) {
+    const v = value || 'ph-1';
+    if (v.indexOf('/') !== -1) {
+      return `<img class="ph" src="${escapeHtml(v)}" alt="${escapeHtml(alt || '')}" loading="lazy" style="display:block;width:100%;object-fit:cover;">`;
+    }
+    return `<div class="ph ${escapeHtml(v)}"></div>`;
+  }
+
+  function escapeHtml(value) {
+    return String(value).replace(/[&<>"']/g, (ch) => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;',
+    }[ch]));
+  }
+
   function renderGallery() {
     const gallery = document.getElementById('product-gallery');
     const images = product.images && product.images.length ? product.images : ['ph-1'];
-    gallery.innerHTML = images.map((cls) => `<div class="ph ${cls}"></div>`).join('');
+    gallery.innerHTML = images.map((src) => renderMedia(src, product.name)).join('');
   }
 
   function renderInfo() {

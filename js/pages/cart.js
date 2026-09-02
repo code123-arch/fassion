@@ -19,11 +19,20 @@
     }[c]));
   }
 
+  // item.image is either a real asset path (assets/images/...) or, as a
+  // fallback, a `.ph-N` placeholder class name.
+  function renderMedia(value, alt) {
+    const v = value || 'ph-1';
+    if (v.indexOf('/') !== -1) {
+      return `<img class="cart-item-image ph" src="${escapeHtml(v)}" alt="${escapeHtml(alt || '')}" loading="lazy" style="display:block;object-fit:cover;">`;
+    }
+    return `<div class="cart-item-image ph ${escapeHtml(v)}"></div>`;
+  }
+
   function itemTemplate(item) {
-    const imageClass = item.image || 'ph-1';
     return `
       <div class="cart-item" data-id="${escapeHtml(item.id)}" data-color="${escapeHtml(item.color)}" data-size="${escapeHtml(item.size)}">
-        <div class="cart-item-image ph ${escapeHtml(imageClass)}"></div>
+        ${renderMedia(item.image, item.name)}
         <div class="cart-item-info">
           <p class="cart-item-name">${escapeHtml(item.name)}</p>
           <p class="cart-item-variant">${escapeHtml(item.color)} / ${escapeHtml(item.size)}</p>
