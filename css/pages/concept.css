@@ -3,6 +3,20 @@
    （css/style.css に無い見せ方のみをここに追加する）
    ========================================================================== */
 
+/* .ph is normally an empty gradient div; here it also carries real <img>
+   placeholder art, so give it image-specific sizing without touching the
+   shared .ph rules in css/style.css. */
+img.ph {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-media {
+  object-position: center 30%;
+}
+
 .story-copy {
   max-width: 640px;
 }
