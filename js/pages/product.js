@@ -73,18 +73,22 @@
     const sizeWrap = document.getElementById('size-options');
 
     colorWrap.innerHTML = (product.colors || [])
-      .map((color) => `<button type="button" class="option-btn" data-color="${color}">${color}</button>`)
+      .map((color) => `<button type="button" class="option-btn" data-color="${color}" aria-pressed="false">${color}</button>`)
       .join('');
 
     sizeWrap.innerHTML = (product.sizes || [])
-      .map((size) => `<button type="button" class="option-btn" data-size="${size}">${size}</button>`)
+      .map((size) => `<button type="button" class="option-btn" data-size="${size}" aria-pressed="false">${size}</button>`)
       .join('');
 
     colorWrap.addEventListener('click', (event) => {
       const btn = event.target.closest('[data-color]');
       if (!btn) return;
       selectedColor = btn.dataset.color;
-      Array.from(colorWrap.children).forEach((b) => b.classList.toggle('is-selected', b === btn));
+      Array.from(colorWrap.children).forEach((b) => {
+        const selected = b === btn;
+        b.classList.toggle('is-selected', selected);
+        b.setAttribute('aria-pressed', String(selected));
+      });
       updateAddToCartState();
     });
 
@@ -92,7 +96,11 @@
       const btn = event.target.closest('[data-size]');
       if (!btn) return;
       selectedSize = btn.dataset.size;
-      Array.from(sizeWrap.children).forEach((b) => b.classList.toggle('is-selected', b === btn));
+      Array.from(sizeWrap.children).forEach((b) => {
+        const selected = b === btn;
+        b.classList.toggle('is-selected', selected);
+        b.setAttribute('aria-pressed', String(selected));
+      });
       updateAddToCartState();
     });
   }
