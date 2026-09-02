@@ -3,6 +3,7 @@
 (function () {
   const formatPrice = (value) => `¥${value.toLocaleString('ja-JP')}`;
 
+  const heroEl = document.querySelector('[data-checkout-hero]');
   const emptyEl = document.querySelector('[data-checkout-empty]');
   const formSectionEl = document.querySelector('[data-checkout-form]');
   const completeEl = document.querySelector('[data-checkout-complete]');
@@ -60,6 +61,7 @@
 
     orderNumberEl.textContent = `注文番号: ${generateOrderNumber()}`;
 
+    if (heroEl) heroEl.hidden = true;
     formSectionEl.hidden = true;
     emptyEl.hidden = true;
     completeEl.hidden = false;
