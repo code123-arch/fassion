@@ -40,7 +40,7 @@
   function renderMedia(value, alt) {
     const v = value || 'ph-1';
     if (v.indexOf('/') !== -1) {
-      return `<img class="ph" src="${escapeHtml(v)}" alt="${escapeHtml(alt || '')}" loading="lazy">`;
+      return `<img class="ph" src="${escapeHtml(v)}" alt="${escapeHtml(alt || '')}" loading="lazy" style="display:block;width:100%;object-fit:cover;">`;
     }
     return `<div class="ph ${escapeHtml(v)}"></div>`;
   }
