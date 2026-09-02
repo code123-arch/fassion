@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="900" height="1200" role="img" aria-label="Second Look, Side">
+  <defs>
+    <linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DED8CB"/>
+      <stop offset="45%" stop-color="#A39B8C"/>
+      <stop offset="100%" stop-color="#5C574C"/>
+    </linearGradient>
+    <filter id="n6">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.16"/></feComponentTransfer>
+    </filter>
+    <clipPath id="clip6"><rect width="900" height="1200"/></clipPath>
+  </defs>
+  <rect width="900" height="1200" fill="url(#g6)"/><g fill="#1A1917" fill-opacity="0.42" color="#1A1917" transform="translate(756.0,0) scale(-1,1)"><circle cx="378.0" cy="656.0" r="20.0" /><path d="M 348.0 690.0 C 338.0 758.0, 349.0 840.0, 355.0 860.0 L 401.0 860.0 C 407.0 840.0, 418.0 758.0, 408.0 690.0 Z" /><path d="M 348.0 698.0 C 342.0 809.0, 344.0 890.0, 352.0 900.0" fill="none" stroke="currentColor" stroke-width="6.0" stroke-linecap="round" opacity="0.7"/><path d="M 355.0 860.0 L 365.35 1080.0 L 372.0 1080.0 L 366.5 981.0 L 378.0 860.0 Z" /><path d="M 401.0 860.0 L 390.65 1080.0 L 384.0 1080.0 L 389.5 981.0 L 378.0 860.0 Z" /></g>
+  <rect width="900" height="1200" filter="url(#n6)" fill="#1A1917"/>
+  <rect x="0.75" y="0.75" width="898.5" height="1198.5" fill="none" stroke="#D8D3C9" stroke-opacity="0.55" stroke-width="1.5"/>
+    <text x="40.5" y="1159.5" font-family="Inter, 'Noto Sans JP', sans-serif" font-size="18.0" letter-spacing="5.3999999999999995" fill="#8C8275" fill-opacity="0.85">LOOK 06 — Second Look, Side</text>
+</svg>
