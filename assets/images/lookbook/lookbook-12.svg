@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="Two Looks, Wide">
+  <defs>
+    <linearGradient id="g12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DED8CB"/>
+      <stop offset="45%" stop-color="#A39B8C"/>
+      <stop offset="100%" stop-color="#5C574C"/>
+    </linearGradient>
+    <filter id="n12">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.16"/></feComponentTransfer>
+    </filter>
+    <clipPath id="clip12"><rect width="1280" height="720"/></clipPath>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g12)"/><line x1="0" y1="561.6" x2="1280" y2="561.6" stroke="#1A1917" stroke-opacity="0.18" stroke-width="1.5"/><g fill="#1A1917" fill-opacity="0.42" color="#1A1917" transform="scale(1,1) translate(0,0)"><circle cx="409.6" cy="222.40000000000003" r="16.0" /><path d="M 385.6 249.60000000000002 C 377.6 304.0, 386.40000000000003 369.6, 391.20000000000005 385.6 L 428.0 385.6 C 432.8 369.6, 441.6 304.0, 433.6 249.60000000000002 Z" /><path d="M 385.6 256.0 C 380.8 344.8, 382.40000000000003 409.6, 388.8 417.6" fill="none" stroke="currentColor" stroke-width="4.800000000000001" stroke-linecap="round" opacity="0.7"/><path d="M 391.20000000000005 385.6 L 399.48 561.6 L 404.8 561.6 L 400.40000000000003 482.40000000000003 L 409.6 385.6 Z" /><path d="M 428.0 385.6 L 419.72 561.6 L 414.40000000000003 561.6 L 418.8 482.40000000000003 L 409.6 385.6 Z" /></g><g fill="#1A1917" fill-opacity="0.42" color="#1A1917" transform="translate(1740.8000000000002,0) scale(-1,1)"><circle cx="870.4000000000001" cy="222.40000000000003" r="16.0" /><path d="M 846.4000000000001 249.60000000000002 C 838.4000000000001 304.0, 847.2000000000002 369.6, 852.0000000000001 385.6 L 888.8000000000001 385.6 C 893.6 369.6, 902.4000000000001 304.0, 894.4000000000001 249.60000000000002 Z" /><path d="M 846.4000000000001 256.0 C 841.6000000000001 344.8, 843.2 409.6, 849.6000000000001 417.6" fill="none" stroke="currentColor" stroke-width="4.800000000000001" stroke-linecap="round" opacity="0.7"/><path d="M 852.0000000000001 385.6 L 860.2800000000001 561.6 L 865.6000000000001 561.6 L 861.2 482.40000000000003 L 870.4000000000001 385.6 Z" /><path d="M 888.8000000000001 385.6 L 880.5200000000001 561.6 L 875.2 561.6 L 879.6000000000001 482.40000000000003 L 870.4000000000001 385.6 Z" /></g>
+  <rect width="1280" height="720" filter="url(#n12)" fill="#1A1917"/>
+  <rect x="0.75" y="0.75" width="1278.5" height="718.5" fill="none" stroke="#D8D3C9" stroke-opacity="0.55" stroke-width="1.5"/>
+    <text x="57.599999999999994" y="662.4" font-family="Inter, 'Noto Sans JP', sans-serif" font-size="25.6" letter-spacing="7.68" fill="#8C8275" fill-opacity="0.85">LOOK 12 — Two Looks, Wide</text>
+</svg>

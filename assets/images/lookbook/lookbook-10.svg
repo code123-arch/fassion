@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Layered Outerwear">
+  <defs>
+    <linearGradient id="g10" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D6D0C3"/>
+      <stop offset="45%" stop-color="#B4AC9E"/>
+      <stop offset="100%" stop-color="#736E62"/>
+    </linearGradient>
+    <filter id="n10">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.16"/></feComponentTransfer>
+    </filter>
+    <clipPath id="clip10"><rect width="800" height="1000"/></clipPath>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g10)"/><g fill="#1A1917" fill-opacity="0.28" color="#1A1917" transform="scale(1,1) translate(0,0)"><circle cx="376.0" cy="323.07999999999987" r="54.60000000000001" /><path d="M 294.1 415.8999999999999 C 266.8 601.54, 296.83 825.4, 313.21 880.0 L 438.79 880.0 C 455.17 825.4, 485.2 601.54, 457.9 415.8999999999999 Z" /><path d="M 294.1 437.7399999999999 C 277.72 740.77, 283.18 961.9, 305.02000000000004 989.2" fill="none" stroke="currentColor" stroke-width="16.380000000000003" stroke-linecap="round" opacity="0.7"/></g><g fill="#1A1917" fill-opacity="0.42" color="#1A1917" transform="scale(1,1) translate(0,0)"><circle cx="424.0" cy="349.6" r="52.0" /><path d="M 346.0 438.0 C 320.0 614.8, 348.59999999999997 828.0, 364.2 880.0 L 483.8 880.0 C 499.40000000000003 828.0, 528.0 614.8, 502.0 438.0 Z" /><path d="M 346.0 458.8 C 330.4 747.4, 335.6 958.0, 356.4 984.0" fill="none" stroke="currentColor" stroke-width="15.600000000000001" stroke-linecap="round" opacity="0.7"/></g>
+  <rect width="800" height="1000" filter="url(#n10)" fill="#1A1917"/>
+  <rect x="0.75" y="0.75" width="798.5" height="998.5" fill="none" stroke="#D8D3C9" stroke-opacity="0.55" stroke-width="1.5"/>
+    <text x="36.0" y="964.0" font-family="Inter, 'Noto Sans JP', sans-serif" font-size="16.0" letter-spacing="4.8" fill="#8C8275" fill-opacity="0.85">LOOK 10 — Layered Outerwear</text>
+</svg>

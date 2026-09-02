@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="Interior, Wide">
+  <defs>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D6D0C3"/>
+      <stop offset="45%" stop-color="#B4AC9E"/>
+      <stop offset="100%" stop-color="#736E62"/>
+    </linearGradient>
+    <filter id="n4">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.16"/></feComponentTransfer>
+    </filter>
+    <clipPath id="clip4"><rect width="1280" height="720"/></clipPath>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g4)"/><line x1="0" y1="561.6" x2="1280" y2="561.6" stroke="#1A1917" stroke-opacity="0.18" stroke-width="1.5"/><g fill="#1A1917" fill-opacity="0.45" color="#1A1917" transform="scale(1,1) translate(0,0)"><circle cx="281.6" cy="180.00000000000003" r="18.0" /><path d="M 254.60000000000002 210.60000000000002 C 245.60000000000002 271.8, 255.50000000000003 345.6, 260.90000000000003 363.6 L 302.3 363.6 C 307.7 345.6, 317.6 271.8, 308.6 210.60000000000002 Z" /><path d="M 254.60000000000002 217.8 C 249.20000000000002 317.70000000000005, 251.00000000000003 390.6, 258.20000000000005 399.6" fill="none" stroke="currentColor" stroke-width="5.4" stroke-linecap="round" opacity="0.7"/><path d="M 260.90000000000003 363.6 L 270.21500000000003 561.6 L 276.20000000000005 561.6 L 271.25 472.5 L 281.6 363.6 Z" /><path d="M 302.3 363.6 L 292.985 561.6 L 287.0 561.6 L 291.95000000000005 472.5 L 281.6 363.6 Z" /></g>
+  <rect width="1280" height="720" filter="url(#n4)" fill="#1A1917"/>
+  <rect x="0.75" y="0.75" width="1278.5" height="718.5" fill="none" stroke="#D8D3C9" stroke-opacity="0.55" stroke-width="1.5"/>
+    <text x="57.599999999999994" y="662.4" font-family="Inter, 'Noto Sans JP', sans-serif" font-size="25.6" letter-spacing="7.68" fill="#8C8275" fill-opacity="0.85">LOOK 04 — Interior, Wide</text>
+</svg>
