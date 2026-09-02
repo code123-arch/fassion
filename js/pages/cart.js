@@ -24,7 +24,7 @@
   function renderMedia(value, alt) {
     const v = value || 'ph-1';
     if (v.indexOf('/') !== -1) {
-      return `<img class="cart-item-image ph" src="${escapeHtml(v)}" alt="${escapeHtml(alt || '')}" loading="lazy" style="display:block;object-fit:cover;">`;
+      return `<img class="cart-item-image ph" src="${escapeHtml(v)}" alt="${escapeHtml(alt || '')}" loading="lazy">`;
     }
     return `<div class="cart-item-image ph ${escapeHtml(v)}"></div>`;
   }
