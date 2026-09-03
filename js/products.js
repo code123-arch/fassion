@@ -10,7 +10,7 @@ window.TACET_PRODUCTS = [
     description: '上質なウールメルトン素材を用いた、シルエットにこだわったロングコート。',
     colors: ['Black', 'Greige'],
     sizes: ['S', 'M', 'L'],
-    images: ['assets/images/p01-1.svg', 'assets/images/p01-2.svg'],
+    images: ['assets/images/p01-1.jpg', 'assets/images/p01-2.jpg'],
   },
   {
     id: 'p02',
@@ -20,7 +20,7 @@ window.TACET_PRODUCTS = [
     description: 'カシミヤを配合した柔らかな風合いの、上品な佇まいのチェスターコート。',
     colors: ['Black', 'Camel'],
     sizes: ['S', 'M', 'L'],
-    images: ['assets/images/p02-1.svg', 'assets/images/p02-2.svg'],
+    images: ['assets/images/p02-1.jpg', 'assets/images/p02-2.jpg'],
   },
   {
     id: 'p03',
@@ -30,7 +30,7 @@ window.TACET_PRODUCTS = [
     description: '軽やかな着心地とすっきりとした襟元が特徴の、通年で使えるステンカラーコート。',
     colors: ['Greige', 'Black'],
     sizes: ['S', 'M', 'L'],
-    images: ['assets/images/p03-1.svg', 'assets/images/p03-2.svg'],
+    images: ['assets/images/p03-1.jpg', 'assets/images/p03-2.jpg'],
   },
   {
     id: 'p04',
@@ -40,7 +40,7 @@ window.TACET_PRODUCTS = [
     description: '襟元をなくしミニマルに仕上げた、羽織るだけで様になるウールジャケット。',
     colors: ['Black'],
     sizes: ['S', 'M', 'L'],
-    images: ['assets/images/p04-1.svg', 'assets/images/p04-2.svg'],
+    images: ['assets/images/p04-1.jpg', 'assets/images/p04-2.jpg'],
   },
   {
     id: 'p05',
@@ -50,7 +50,7 @@ window.TACET_PRODUCTS = [
     description: 'シルクを混紡した上品な光沢感が特徴の、体のラインを拾わないブラウス。',
     colors: ['Ivory', 'Black'],
     sizes: ['S', 'M', 'L'],
-    images: ['assets/images/p05-1.svg', 'assets/images/p05-2.svg'],
+    images: ['assets/images/p05-1.jpg', 'assets/images/p05-2.jpg'],
   },
   {
     id: 'p06',
@@ -60,7 +60,7 @@ window.TACET_PRODUCTS = [
     description: 'コットンとリネンの混紡素材による、自然な涼感とハリ感を両立したシャツ。',
     colors: ['White', 'Greige'],
     sizes: ['S', 'M', 'L'],
-    images: ['assets/images/p06-1.svg', 'assets/images/p06-2.svg'],
+    images: ['assets/images/p06-1.jpg', 'assets/images/p06-2.jpg'],
   },
   {
     id: 'p07',
@@ -70,7 +70,7 @@ window.TACET_PRODUCTS = [
     description: '細番手の糸を用いた上質な編地の、レイヤードにも映えるプルオーバー。',
     colors: ['Black', 'Ivory'],
     sizes: ['S', 'M', 'L'],
-    images: ['assets/images/p07-1.svg', 'assets/images/p07-2.svg'],
+    images: ['assets/images/p07-1.jpg', 'assets/images/p07-2.jpg'],
   },
   {
     id: 'p08',
@@ -80,7 +80,7 @@ window.TACET_PRODUCTS = [
     description: '肌当たりの良いコットン素材を使用した、単体でもレイヤードでも活躍するカットソー。',
     colors: ['Black', 'Greige', 'Ivory'],
     sizes: ['S', 'M', 'L'],
-    images: ['assets/images/p08-1.svg', 'assets/images/p08-2.svg'],
+    images: ['assets/images/p08-1.jpg', 'assets/images/p08-2.jpg'],
   },
   {
     id: 'p09',
@@ -90,7 +90,7 @@ window.TACET_PRODUCTS = [
     description: '裾に向けて緩やかに絞ったシルエットの、上質なウール素材のトラウザー。',
     colors: ['Black', 'Greige'],
     sizes: ['S', 'M', 'L'],
-    images: ['assets/images/p09-1.svg', 'assets/images/p09-2.svg'],
+    images: ['assets/images/p09-1.jpg', 'assets/images/p09-2.jpg'],
   },
   {
     id: 'p10',
@@ -100,7 +100,7 @@ window.TACET_PRODUCTS = [
     description: 'ゆとりのあるワイドシルエットが特徴の、きれいめにもカジュアルにも合わせやすいスラックス。',
     colors: ['Black'],
     sizes: ['S', 'M', 'L'],
-    images: ['assets/images/p10-1.svg', 'assets/images/p10-2.svg'],
+    images: ['assets/images/p10-1.jpg', 'assets/images/p10-2.jpg'],
   },
   {
     id: 'p11',
@@ -110,7 +110,7 @@ window.TACET_PRODUCTS = [
     description: 'クラシックなストレートシルエットの、着るほどに馴染むリジッドデニム。',
     colors: ['Indigo', 'Black'],
     sizes: ['S', 'M', 'L'],
-    images: ['assets/images/p11-1.svg', 'assets/images/p11-2.svg'],
+    images: ['assets/images/p11-1.jpg', 'assets/images/p11-2.jpg'],
   },
   {
     id: 'p12',
@@ -120,7 +120,7 @@ window.TACET_PRODUCTS = [
     description: '細やかなタックプリーツが上品な陰影を生む、Aラインのロングスカート。',
     colors: ['Black', 'Greige'],
     sizes: ['S', 'M', 'L'],
-    images: ['assets/images/p12-1.svg', 'assets/images/p12-2.svg'],
+    images: ['assets/images/p12-1.jpg', 'assets/images/p12-2.jpg'],
   },
   {
     id: 'p13',
@@ -130,7 +130,7 @@ window.TACET_PRODUCTS = [
     description: '無駄な装飾を削ぎ落とした、上質なレザーを使用したミニマルな二つ折りウォレット。',
     colors: ['Black', 'Brown'],
     sizes: ['Free'],
-    images: ['assets/images/p13-1.svg', 'assets/images/p13-2.svg'],
+    images: ['assets/images/p13-1.jpg', 'assets/images/p13-2.jpg'],
   },
   {
     id: 'p14',
@@ -140,7 +140,7 @@ window.TACET_PRODUCTS = [
     description: 'シルクを混紡した柔らかな落ち感の、一枚で装いを引き締めるロングスカーフ。',
     colors: ['Black', 'Greige', 'Ivory'],
     sizes: ['Free'],
-    images: ['assets/images/p14-1.svg', 'assets/images/p14-2.svg'],
+    images: ['assets/images/p14-1.jpg', 'assets/images/p14-2.jpg'],
   },
 ];
 

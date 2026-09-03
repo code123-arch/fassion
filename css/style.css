@@ -121,6 +121,16 @@ h1, h2, h3, h4 {
 .ph-2 { background: linear-gradient(155deg, #C4BEB1 0%, #928A7C 50%, #4E4A41 100%); }
 .ph-3 { background: linear-gradient(155deg, #DED8CB 0%, #A39B8C 55%, #5C574C 100%); }
 
+/* Real photography drop-in: <img class="ph"> replaces the gradient div in
+   markup but still needs explicit sizing to fill its container like the
+   background-based placeholder did. */
+img.ph {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ==========================================================================
    Header
    ========================================================================== */

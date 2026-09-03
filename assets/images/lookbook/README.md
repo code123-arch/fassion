@@ -32,9 +32,9 @@
 | `lookbook-13.jpg` | 13 | `lb-lg`（中大） | 4:5 縦 |
 | `lookbook-14.jpg` | 14 | `lb-xl`（大） | 3:4 縦 |
 
-画像が揃ったら `lookbook.html` の該当する `<div class="ph ph-X"></div>` を
-`<img src="assets/images/lookbook/lookbook-XX.jpg" alt="..." loading="lazy" class="ph-X">`
-に差し替えます（`.ph` の代わりに実画像を敷き、`object-fit: cover` を当てる想定。
-`aspect-ratio` 指定は `css/pages/lookbook.css` 側にすでにあるためそのまま流用可）。
+画像が揃ったら `lookbook.html` 側の該当する `<img>` の `src` 拡張子を
+`.svg` から `.jpg`（用意した実写・AI生成画像の拡張子）に差し替えるだけで
+反映されます。`class="ph"` と `object-fit: cover` はそのまま流用でき、
+`aspect-ratio` 指定も `css/pages/lookbook.css` 側にすでにあるため変更不要です。
 
 画像生成プロンプトは `PROMPTS.md` を参照してください。
