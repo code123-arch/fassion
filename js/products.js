@@ -4,7 +4,7 @@
 window.TACET_PRODUCTS = [
   {
     id: 'p01',
-    name: 'ウールメルトン ロングコート',
+    name: '厚地ウールメルトンのロングコート',
     category: 'Outerwear',
     price: 68000,
     description: '上質なウールメルトン素材を用いた、シルエットにこだわったロングコート。',
@@ -14,7 +14,7 @@ window.TACET_PRODUCTS = [
   },
   {
     id: 'p02',
-    name: 'カシミヤブレンド チェスターコート',
+    name: '上質カシミヤ配合チェスターコート',
     category: 'Outerwear',
     price: 98000,
     description: 'カシミヤを配合した柔らかな風合いの、上品な佇まいのチェスターコート。',
@@ -24,7 +24,7 @@ window.TACET_PRODUCTS = [
   },
   {
     id: 'p03',
-    name: 'ステンカラーコート',
+    name: '軽やか仕立てのステンカラーコート',
     category: 'Outerwear',
     price: 52000,
     description: '軽やかな着心地とすっきりとした襟元が特徴の、通年で使えるステンカラーコート。',
@@ -34,7 +34,7 @@ window.TACET_PRODUCTS = [
   },
   {
     id: 'p04',
-    name: 'ノーカラーウールジャケット',
+    name: '襟なしウールジャケット',
     category: 'Outerwear',
     price: 46000,
     description: '襟元をなくしミニマルに仕上げた、羽織るだけで様になるウールジャケット。',
@@ -44,7 +44,7 @@ window.TACET_PRODUCTS = [
   },
   {
     id: 'p05',
-    name: 'シルクブレンド ブラウス',
+    name: '艶やかシルクブレンドブラウス',
     category: 'Tops',
     price: 28000,
     description: 'シルクを混紡した上品な光沢感が特徴の、体のラインを拾わないブラウス。',
@@ -54,7 +54,7 @@ window.TACET_PRODUCTS = [
   },
   {
     id: 'p06',
-    name: 'コットンリネン シャツ',
+    name: '涼感コットンリネンシャツ',
     category: 'Tops',
     price: 24000,
     description: 'コットンとリネンの混紡素材による、自然な涼感とハリ感を両立したシャツ。',
@@ -64,7 +64,7 @@ window.TACET_PRODUCTS = [
   },
   {
     id: 'p07',
-    name: 'ハイゲージ ニットプルオーバー',
+    name: '細編みハイゲージニット',
     category: 'Tops',
     price: 32000,
     description: '細番手の糸を用いた上質な編地の、レイヤードにも映えるプルオーバー。',
@@ -74,7 +74,7 @@ window.TACET_PRODUCTS = [
   },
   {
     id: 'p08',
-    name: 'タートルネック カットソー',
+    name: 'やわらかタートルネックカットソー',
     category: 'Tops',
     price: 19000,
     description: '肌当たりの良いコットン素材を使用した、単体でもレイヤードでも活躍するカットソー。',
@@ -84,7 +84,7 @@ window.TACET_PRODUCTS = [
   },
   {
     id: 'p09',
-    name: 'テーパード ウールトラウザー',
+    name: 'すっきりテーパードトラウザー',
     category: 'Bottoms',
     price: 38000,
     description: '裾に向けて緩やかに絞ったシルエットの、上質なウール素材のトラウザー。',
@@ -94,7 +94,7 @@ window.TACET_PRODUCTS = [
   },
   {
     id: 'p10',
-    name: 'ワイドシルエット スラックス',
+    name: 'ゆったりワイドスラックス',
     category: 'Bottoms',
     price: 34000,
     description: 'ゆとりのあるワイドシルエットが特徴の、きれいめにもカジュアルにも合わせやすいスラックス。',
@@ -104,7 +104,7 @@ window.TACET_PRODUCTS = [
   },
   {
     id: 'p11',
-    name: 'ストレートデニム',
+    name: '定番ストレートデニム',
     category: 'Bottoms',
     price: 22000,
     description: 'クラシックなストレートシルエットの、着るほどに馴染むリジッドデニム。',
@@ -114,7 +114,7 @@ window.TACET_PRODUCTS = [
   },
   {
     id: 'p12',
-    name: 'タックプリーツスカート',
+    name: '上品タックプリーツスカート',
     category: 'Bottoms',
     price: 30000,
     description: '細やかなタックプリーツが上品な陰影を生む、Aラインのロングスカート。',
@@ -124,7 +124,7 @@ window.TACET_PRODUCTS = [
   },
   {
     id: 'p13',
-    name: 'レザー ミニマルウォレット',
+    name: '薄型レザーウォレット',
     category: 'Accessories',
     price: 26000,
     description: '無駄な装飾を削ぎ落とした、上質なレザーを使用したミニマルな二つ折りウォレット。',
@@ -134,7 +134,7 @@ window.TACET_PRODUCTS = [
   },
   {
     id: 'p14',
-    name: 'シルク混 ロングスカーフ',
+    name: 'しなやかシルク混スカーフ',
     category: 'Accessories',
     price: 18000,
     description: 'シルクを混紡した柔らかな落ち感の、一枚で装いを引き締めるロングスカーフ。',

@@ -36,6 +36,8 @@
   align-items: start;
 }
 
+.cart-content[hidden] { display: none; }
+
 @media (max-width: 1023px) {
   .cart-content { grid-template-columns: 1fr; gap: 48px; }
 }

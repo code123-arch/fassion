@@ -28,6 +28,8 @@
   align-items: start;
 }
 
+.checkout-grid[hidden] { display: none; }
+
 @media (max-width: 1023px) {
   .checkout-grid {
     grid-template-columns: 1fr;

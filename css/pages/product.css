@@ -37,6 +37,8 @@
   align-items: start;
 }
 
+.product-detail[hidden] { display: none; }
+
 @media (max-width: 1023px) {
   .product-detail { grid-template-columns: 1fr; gap: 40px; }
 }
