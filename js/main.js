@@ -59,3 +59,39 @@
 
   document.addEventListener('DOMContentLoaded', initNavToggle);
 })();
+
+// Header text color: dark by default (matches the light page background
+// almost everywhere), switched to light while a dark full-bleed section
+// (marked with [data-header-invert], e.g. the homepage's concept-teaser)
+// is scrolled underneath the fixed header, so it stays legible either way.
+(function () {
+  function initHeaderInvert() {
+    const header = document.querySelector('.site-header');
+    const sections = Array.from(document.querySelectorAll('[data-header-invert]'));
+    if (!header || !sections.length) return;
+
+    let ticking = false;
+
+    function update() {
+      ticking = false;
+      const headerHeight = header.getBoundingClientRect().height || 88;
+      const onDark = sections.some((section) => {
+        const rect = section.getBoundingClientRect();
+        return rect.top < headerHeight && rect.bottom > 0;
+      });
+      header.classList.toggle('is-on-dark', onDark);
+    }
+
+    function requestUpdate() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(update);
+    }
+
+    window.addEventListener('scroll', requestUpdate, { passive: true });
+    window.addEventListener('resize', requestUpdate);
+    update();
+  }
+
+  document.addEventListener('DOMContentLoaded', initHeaderInvert);
+})();

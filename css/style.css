@@ -207,6 +207,15 @@ img.ph {
   cursor: pointer;
 }
 
+/* While a dark full-bleed section (e.g. .concept-teaser) scrolls underneath
+   the fixed header, js/main.js toggles this so the text stays legible. */
+.site-header.is-on-dark .logo,
+.site-header.is-on-dark .main-nav a,
+.site-header.is-on-dark .cart-link,
+.site-header.is-on-dark .nav-toggle {
+  color: var(--color-ink-inverse);
+}
+
 @media (max-width: 1023px) {
   .main-nav {
     position: fixed;
