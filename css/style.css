@@ -143,9 +143,6 @@ img.ph {
   display: flex;
   align-items: center;
   z-index: 100;
-  background: rgba(26, 25, 23, 0.78);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
 }
 
 .site-header .container {
@@ -159,7 +156,7 @@ img.ph {
   font-family: var(--font-serif);
   font-size: 22px;
   letter-spacing: 0.32em;
-  color: var(--color-ink-inverse);
+  color: var(--color-ink);
 }
 
 .main-nav {
@@ -171,13 +168,13 @@ img.ph {
   font-size: 12px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-ink-inverse);
+  color: var(--color-ink);
   padding-bottom: 4px;
   border-bottom: 1px solid transparent;
   transition: border-color var(--dur) var(--ease);
 }
 
-.main-nav a:hover { border-color: var(--color-ink-inverse); }
+.main-nav a:hover { border-color: currentColor; }
 
 .header-actions {
   display: flex;
@@ -189,7 +186,7 @@ img.ph {
   font-size: 12px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-ink-inverse);
+  color: var(--color-ink);
   position: relative;
 }
 
@@ -203,7 +200,7 @@ img.ph {
   display: none;
   background: none;
   border: none;
-  color: var(--color-ink-inverse);
+  color: var(--color-ink);
   font-size: 12px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
