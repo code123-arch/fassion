@@ -216,6 +216,22 @@ img.ph {
   color: var(--color-ink-inverse);
 }
 
+/* The header stays fully transparent at rest (scrollY 0, floating over the
+   hero). The instant the page scrolls, normal-flow content (e.g. the hero's
+   own bottom-aligned text) can pass directly underneath/through it, so a
+   soft frosted backdrop kicks in — tinted to match whichever text color is
+   active — purely so nothing shows through and collides with the nav text. */
+.site-header.is-scrolled {
+  background: rgba(245, 243, 239, 0.86);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: background 0.25s var(--ease);
+}
+
+.site-header.is-scrolled.is-on-dark {
+  background: rgba(26, 25, 23, 0.8);
+}
+
 @media (max-width: 1023px) {
   .main-nav {
     position: fixed;
@@ -263,7 +279,11 @@ img.ph {
   color: var(--color-ink-inverse);
 }
 
-.hero .ph { position: absolute; inset: 0; }
+/* height:100% is required here: an absolutely positioned <img> with
+   inset:0 but an auto height still sizes itself from the photo's own
+   intrinsic aspect ratio (since width:100% is definite), ignoring the
+   bottom:0 constraint — it does NOT automatically stretch to fill. */
+.hero .ph { position: absolute; inset: 0; height: 100%; }
 
 /* Scrim so the heading/subtitle stay legible no matter how the photo crops
    at a given viewport ratio (the subject's position under object-fit:cover

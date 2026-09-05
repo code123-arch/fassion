@@ -60,26 +60,33 @@
   document.addEventListener('DOMContentLoaded', initNavToggle);
 })();
 
-// Header text color: dark by default (matches the light page background
-// almost everywhere), switched to light while a dark full-bleed section
-// (marked with [data-header-invert], e.g. the homepage's concept-teaser)
-// is scrolled underneath the fixed header, so it stays legible either way.
+// Header appearance while scrolling:
+// - is-on-dark: text switches to light while a dark full-bleed section
+//   (marked [data-header-invert], e.g. the homepage's concept-teaser) is
+//   behind the header, so it stays legible against that background.
+// - is-scrolled: the header is fully transparent at rest (scrollY 0, just
+//   floating over the hero), but the moment the page scrolls, normal-flow
+//   content (e.g. the hero's own bottom-aligned text) can pass directly
+//   underneath/through it — so a soft frosted backdrop kicks in, tinted to
+//   match whichever text color is active, purely so nothing shows through
+//   and collides with the nav text.
 (function () {
-  function initHeaderInvert() {
+  function initHeaderChrome() {
     const header = document.querySelector('.site-header');
-    const sections = Array.from(document.querySelectorAll('[data-header-invert]'));
-    if (!header || !sections.length) return;
+    if (!header) return;
+    const invertSections = Array.from(document.querySelectorAll('[data-header-invert]'));
 
     let ticking = false;
 
     function update() {
       ticking = false;
       const headerHeight = header.getBoundingClientRect().height || 88;
-      const onDark = sections.some((section) => {
+      const onDark = invertSections.some((section) => {
         const rect = section.getBoundingClientRect();
         return rect.top < headerHeight && rect.bottom > 0;
       });
       header.classList.toggle('is-on-dark', onDark);
+      header.classList.toggle('is-scrolled', window.scrollY > 0);
     }
 
     function requestUpdate() {
@@ -93,5 +100,5 @@
     update();
   }
 
-  document.addEventListener('DOMContentLoaded', initHeaderInvert);
+  document.addEventListener('DOMContentLoaded', initHeaderChrome);
 })();
