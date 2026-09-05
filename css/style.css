@@ -265,6 +265,25 @@ img.ph {
 
 .hero .ph { position: absolute; inset: 0; }
 
+/* Scrim so the heading/subtitle stay legible no matter how the photo crops
+   at a given viewport ratio (the subject's position under object-fit:cover
+   shifts a lot between e.g. phone and tablet-portrait dimensions). */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.62) 0%,
+    rgba(0, 0, 0, 0.46) 18%,
+    rgba(0, 0, 0, 0.26) 34%,
+    rgba(0, 0, 0, 0.11) 48%,
+    rgba(0, 0, 0, 0.03) 60%,
+    rgba(0, 0, 0, 0) 72%
+  );
+}
+
 .hero-content {
   position: relative;
   z-index: 2;
