@@ -149,8 +149,6 @@
 .order-item-meta { flex: 1; min-width: 0; }
 
 .order-item-meta h3 {
-  font-family: var(--font-sans);
-  font-weight: 500;
   font-size: 14px;
 }
 

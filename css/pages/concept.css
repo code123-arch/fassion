@@ -3,16 +3,12 @@
    （css/style.css に無い見せ方のみをここに追加する）
    ========================================================================== */
 
-/* .ph is normally an empty gradient div; here it also carries real <img>
-   placeholder art, so give it image-specific sizing without touching the
-   shared .ph rules in css/style.css. */
-img.ph {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
+/* img.ph sizing (display/width/object-fit) now lives in the shared
+   css/style.css rule; .hero .ph there also sets height:100% specifically
+   for the absolutely positioned hero photo. Don't redeclare height:100%
+   here — it would apply to every .ph image on this page (including the
+   normal-flow .commitment-item photos), which breaks their container's
+   height the same way it did on the Collection page grid. */
 .hero-media {
   object-position: center 30%;
 }
